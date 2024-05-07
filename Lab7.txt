@@ -1,0 +1,200 @@
+package basic_java;
+
+//Create a class called circle . It contains: Two instance variables: radius (of the type double) and color (of the type String).One public methods: getArea(),simple Constructor  with default value of 1.0 and "red", and parameterized constructor.
+
+public class Circle {
+     double radius;
+     String color;
+
+    public Circle() {
+        this.radius = 1.0;
+        this.color = "red";
+    }
+
+    public Circle(double radius, String color) {
+        this.radius = radius;
+        this.color = color;
+    }
+
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    // Main method for testing
+    public static void main(String[] args) {
+        Circle circle1 = new Circle();
+        System.out.println("Circle 1 - Radius: " + circle1.getRadius() + ", Color: " + circle1.getColor() + ", Area: " + circle1.getArea());
+
+        Circle circle2 = new Circle(2.5, "blue");
+        System.out.println("Circle 2 - Radius: " + circle2.getRadius() + ", Color: " + circle2.getColor() + ", Area: " + circle2.getArea());
+    }
+}
+
+
+Create a class GrandFather with methods name, property , physicalApperance. describe each properties of Grandfather in the class properly in the main method
+
+    Create a class GrandFather with methods name, property , physicalApperance. describe each properties of Grandfather in the class properly in the main method
+
+    class GrandFather {
+     String name;
+     String property;
+     String physicalAppearance;
+
+    public GrandFather(String name, String property, String physicalAppearance) {
+        this.name = name;
+        this.property = property;
+        this.physicalAppearance = physicalAppearance;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getProperty() {
+        return property;
+    }
+
+    public String getPhysicalAppearance() {
+        return physicalAppearance;
+    }
+}
+
+class Father extends GrandFather {
+    public Father(String name, String property, String physicalAppearance) {
+        super(name, property, physicalAppearance);
+    }
+
+    @Override
+    public String getProperty() {
+        // Overriding the property to specify that it's inherited but can be modified
+        return "Inherited from GrandFather, but managed separately";
+    }
+}
+
+class Son extends Father {
+    public Son(String name, String property, String physicalAppearance) {
+        super(name, property, physicalAppearance);
+    }
+
+    @Override
+    public String getPhysicalAppearance() {
+        return super.getPhysicalAppearance() + ", Plus specific to Son";
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        GrandFather grandFather = new GrandFather("Grandpa", "Land", "Tall");
+        System.out.println("GrandFather:");
+        System.out.println("Name: " + grandFather.getName());
+        System.out.println("Property: " + grandFather.getProperty());
+        System.out.println("Physical Appearance: " + grandFather.getPhysicalAppearance());
+
+        Father father = new Father("Dad", "Business", "Medium height");
+        System.out.println("\nFather:");
+        System.out.println("Name: " + father.getName());
+        System.out.println("Property: " + father.getProperty());
+        System.out.println("Physical Appearance: " + father.getPhysicalAppearance());
+
+        Son son = new Son("Sonny", "Education", "Short");
+        System.out.println("\nSon:");
+        System.out.println("Name: " + son.getName());
+        System.out.println("Property: " + son.getProperty());
+        System.out.println("Physical Appearance: " + son.getPhysicalAppearance());
+    }
+}
+
+    Demonstrate the example of Single, hierarchical inheritance using shapes as a base class.
+    
+    class Shape {
+     double area;
+
+    public void calculateArea() {
+        System.out.println("Calculating area of shape...");
+    }
+}
+
+class Rectangle extends Shape {
+     double length;
+     double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    public void calculateArea() {
+        area = length * width;
+        System.out.println("Area of rectangle: " + area);
+    }
+}
+
+
+class Circle extends Shape {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public void calculateArea() {
+        area = Math.PI * radius * radius;
+        System.out.println("Area of circle: " + area);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating objects of derived classes
+        Rectangle rectangle = new Rectangle(5, 4);
+        Circle circle = new Circle(3);
+
+        rectangle.calculateArea(); // Output: Area of rectangle: 20.0
+        circle.calculateArea();    // Output: Area of circle: 28.
+    }
+}
+
+    OUPUT:
+    1.
+    Circle 1 - Radius: 1.0, Color: red, Area: 3.141592653589793
+Circle 2 - Radius: 2.5, Color: blue, Area: 19.634954084936208
+
+  2.
+GrandFather:
+Name: Grandpa
+Property: Land
+Physical Appearance: Tall
+
+Father:
+Name: Dad
+Property: Inherited from GrandFather, but managed separately
+Physical Appearance: Medium height
+
+Son:
+Name: Sonny
+Property: Inherited from GrandFather, but managed separately
+Physical Appearance: Short, Plus specific to Son
+
+  3.
+  Area of rectangle: 20.0
+Area of circle: 28.274333882308138
+        
+        

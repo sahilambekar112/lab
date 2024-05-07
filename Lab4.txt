@@ -1,0 +1,95 @@
+public class Typecasting {
+
+	public static void main(String[] args) {
+			// TODO Auto-generated method stub
+
+		 // Converting integer type data to floating point type data
+        byte byteData = 10;
+        short shortData = 100;
+        int intData = 1000;
+        long longData = 10000L;
+
+        float floatDataByte = (float) byteData;
+        float floatDataShort = (float) shortData;
+        float floatDataInt = (float) intData;
+        float floatDataLong = (float) longData;
+
+        System.out.println("Byte to float: " + floatDataByte);
+        System.out.println("Short to float: " + floatDataShort);
+        System.out.println("Int to float: " + floatDataInt);
+        System.out.println("Long to float: " + floatDataLong);
+
+        // Converting floating point type data to integer type data
+        float floatNumber = 123.45f;
+        double doubleNumber = 987.654;
+
+        byte byteNumber = (byte) floatNumber;
+        short shortNumber = (short) doubleNumber;
+        int intNumber = (int) floatNumber;
+        long longNumber = (long) doubleNumber;
+
+        System.out.println("Float to byte: " + byteNumber);
+        System.out.println("Double to short: " + shortNumber);
+        System.out.println("Float to int: " + intNumber);
+        System.out.println("Double to long: " + longNumber);
+        
+        System.out.println("========================================================");
+        
+     // 2.Convert the character type data into int , float and tell the difference in both.
+                char charValue = 'A';
+                
+                // Convert char to int
+                int intValue = (int) charValue;
+                System.out.println("Character '" + charValue + "' as an integer: " + intValue);
+                
+                // Convert char to float
+                float floatValue = (float) charValue;
+                System.out.println("Character '" + charValue + "' as a float: " + floatValue);
+        
+                System.out.println("===================================================");
+                
+             // Print uppercase alphabets
+                System.out.println("Uppercase Alphabets:");
+                for (int i = 65; i <= 90; i++) {
+                    char uppercase = (char) i;
+                    System.out.print(uppercase + " ");
+                }
+                
+                System.out.println(); // Add a new line
+                
+                // Print lowercase alphabets
+                System.out.println("\nLowercase Alphabets:");
+                for (int i = 97; i <= 122; i++) {
+                    char lowercase = (char) i;
+                    System.out.print(lowercase + " ");
+                }
+          
+	
+	
+	
+	}
+        
+     	}
+
+
+	
+output : 
+
+Byte to float: 10.0
+Short to float: 100.0
+Int to float: 1000.0
+Long to float: 10000.0
+Float to byte: 123
+Double to short: 987
+Float to int: 123
+Double to long: 987
+========================================================
+Character 'A' as an integer: 65
+Character 'A' as a float: 65.0
+===================================================
+Uppercase Alphabets:
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+
+Lowercase Alphabets:
+a b c d e f g h i j k l m n o p q r s t u v w x y z 
+

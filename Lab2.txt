@@ -1,0 +1,219 @@
+public class Lab_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int month=1 ;
+		
+		switch (month)
+		{
+			case 1 :
+				System.out.println("Janeury");
+
+				
+			case 2 :
+			   System.out.println("Februaury");
+			   
+			
+			case 3 :
+			   System.out.println("March");
+			   	
+			 
+			case 4 :
+			   System.out.println("April");
+		
+			
+			case 5:
+			   System.out.println("May");
+			   
+			   
+			case 6 :
+				System.out.println("June");
+				
+			
+			case 7 :
+			   System.out.println("Jualy");
+			   
+			
+			case 8 :
+			   System.out.println("August");
+			  
+			
+				case 9 :
+			   System.out.println("Saptember");
+			  
+				
+				case 10 : 
+			     System.out.println("Octomber");
+			     
+			     
+				case 11 : 
+				     System.out.println("November");
+				     
+				     
+				case 12 : 
+				     System.out.println("December");
+				     break;
+		
+		
+				
+		}
+		
+	System.out.println("===========================================================");	
+	
+	
+	int a = 1;
+	while(a<=10) {
+	System.out.println(42 +"x" + a +" = "+42*a);	
+	a++;
+	}
+	
+	
+	System.out.println("===========================================================");	
+
+	
+int marks=45; 
+char  grade;
+	
+	if(marks>=90) {
+	grade=  'A';
+	}
+	
+	else if  (marks>=80) {
+	grade='B';
+	}
+	else if (marks>=70) {
+	grade='C';
+	}
+	else if (marks>=50) {
+		grade='D';
+	}
+	
+	else {
+		grade ='f';
+	}
+	
+	System.out.println("your grade is " + grade );
+
+	
+	
+	System.out.println("===========================================================");	
+	
+	
+	for(int i=97;i<=122;i++) {
+		System.out.println((char)i +" ");
+	
+	}
+	System.out.println("===========================================================");
+	  for (int i=65;i<=90;i++) {
+		  System.out.println((char)i +" ");
+	  }
+	System.out.println("===========================================================");	
+	
+	for(int i=1;i<=20;i++) {
+		
+		if(i==10) {
+			break;
+		}
+		 if (i==11) {
+			continue;
+		}
+		System.out.println(i);
+	
+	}
+	
+	
+}
+}
+	
+
+output :
+Janeury
+Februaury
+March
+April
+May
+June
+Jualy
+August
+Saptember
+Octomber
+November
+December
+===========================================================
+42x1 = 42
+42x2 = 84
+42x3 = 126
+42x4 = 168
+42x5 = 210
+42x6 = 252
+42x7 = 294
+42x8 = 336
+42x9 = 378
+42x10 = 420
+===========================================================
+your grade is f
+===========================================================
+a 
+b 
+c 
+d 
+e 
+f 
+g 
+h 
+i 
+j 
+k 
+l 
+m 
+n 
+o 
+p 
+q 
+r 
+s 
+t 
+u 
+v 
+w 
+x 
+y 
+z 
+===========================================================
+A 
+B 
+C 
+D 
+E 
+F 
+G 
+H 
+I 
+J 
+K 
+L 
+M 
+N 
+O 
+P 
+Q 
+R 
+S 
+T 
+U 
+V 
+W 
+X 
+Y 
+Z 
+===========================================================
+1
+2
+3
+4
+5
+6
+7
+8
+9

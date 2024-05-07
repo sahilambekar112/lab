@@ -1,0 +1,277 @@
+import java.util.Scanner;
+
+public class Loops {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 //1. WAP to print numbers 50 to 1 in reverse in a single line using for loop
+		
+		for(int i =50;i>=1;i--) {
+			System.out.print(i+" ");
+		
+		
+	}
+
+        System.out.println();		
+	
+		//2. WAP to print numbers 50 to 1 in reverse in a single line using while loop
+
+		int num = 50;
+        while (num >= 1) {
+            System.out.print(num+" ");
+            num--;
+        }
+		System.out.println();
+
+            //3. Wap to print numbers 50  to 1 in reverse in a single line using do while loop
+            
+            int num1 = 50;
+            do {
+                System.out.print(num1 + " ");
+                num1--;
+            } while (num1 >= 1);
+        
+            System.out.println();
+            //4. WAP to print multiplication table of number taken by user using while loop
+            
+            Scanner Sc = new Scanner(System.in);
+            
+            System.out.println("enter a multiplication table number :");
+            
+            int number=Sc.nextInt();
+            
+            System.out.println("Multiplication table of " + number + ":");
+            
+            int i= 1;
+    
+            while(i<=10) {
+            	System.out.println(number+"*"+ i +"="+(number * i));
+            	i++;
+            }
+            
+            Sc.close();
+            
+         //5. WAP to print prime numbers from 1 to 100
+            
+            int k,l;
+            
+            boolean isprime;
+            
+            System.out.println("prime number between 1to100 are :");
+            
+            for(k=2;k<=100;k++) {
+            	isprime=true;
+            	
+            	for(l=2;l<=k/2;l++) {
+            		if(k%l==0) {
+            			isprime=false;
+            			break;
+            		}
+            	}
+            		
+            		if(isprime) {
+            			System.out.print(k+" ");
+            		}
+            	
+            }
+            
+	}
+        
+	
+	}
+
+	
+
+OutPut:
+
+import java.util.Scanner;
+
+public class Loops {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 //1. WAP to print numbers 50 to 1 in reverse in a single line using for loop
+		
+		for(int i =50;i>=1;i--) {
+			System.out.print(i+" ");
+		
+		
+	}
+
+        System.out.println();		
+	
+		//2. WAP to print numbers 50 to 1 in reverse in a single line using while loop
+
+		int num = 50;
+        while (num >= 1) {
+            System.out.print(num+" ");
+            num--;
+        }
+		System.out.println();
+
+            //3. Wap to print numbers 50  to 1 in reverse in a single line using do while loop
+            
+            int num1 = 50;
+            do {
+                System.out.print(num1 + " ");
+                num1--;
+            } while (num1 >= 1);
+        
+            System.out.println();
+            //4. WAP to print multiplication table of number taken by user using while loop
+            
+            Scanner Sc = new Scanner(System.in);
+            
+            System.out.println("enter a multiplication table number :");
+            
+            int number=Sc.nextInt();
+            
+            System.out.println("Multiplication table of " + number + ":");
+            
+            int i= 1;
+    
+            while(i<=10) {
+            	System.out.println(number+"*"+ i +"="+(number * i));
+            	i++;
+            }
+            
+            Sc.close();
+            
+         //5. WAP to print prime numbers from 1 to 100
+            
+            int k,l;
+            
+            boolean isprime;
+            
+            System.out.println("prime number between 1to100 are :");
+            
+            for(k=2;k<=100;k++) {
+            	isprime=true;
+            	
+            	for(l=2;l<=k/2;l++) {
+            		if(k%l==0) {
+            			isprime=false;
+            			break;
+            		}
+            	}
+            		
+            		if(isprime) {
+            			System.out.print(k+" ");
+            		}
+            	
+            }
+            
+	}
+        
+	
+	}
+
+	
+
+output :
+
+import java.util.Scanner;
+
+public class Loops {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 //1. WAP to print numbers 50 to 1 in reverse in a single line using for loop
+		
+		for(int i =50;i>=1;i--) {
+			System.out.print(i+" ");
+		
+		
+	}
+
+        System.out.println();		
+	
+		//2. WAP to print numbers 50 to 1 in reverse in a single line using while loop
+
+		int num = 50;
+        while (num >= 1) {
+            System.out.print(num+" ");
+            num--;
+        }
+		System.out.println();
+
+            //3. Wap to print numbers 50  to 1 in reverse in a single line using do while loop
+            
+            int num1 = 50;
+            do {
+                System.out.print(num1 + " ");
+                num1--;
+            } while (num1 >= 1);
+        
+            System.out.println();
+            //4. WAP to print multiplication table of number taken by user using while loop
+            
+            Scanner Sc = new Scanner(System.in);
+            
+            System.out.println("enter a multiplication table number :");
+            
+            int number=Sc.nextInt();
+            
+            System.out.println("Multiplication table of " + number + ":");
+            
+            int i= 1;
+    
+            while(i<=10) {
+            	System.out.println(number+"*"+ i +"="+(number * i));
+            	i++;
+            }
+            
+            Sc.close();
+            
+         //5. WAP to print prime numbers from 1 to 100
+            
+            int k,l;
+            
+            boolean isprime;
+            
+            System.out.println("prime number between 1to100 are :");
+            
+            for(k=2;k<=100;k++) {
+            	isprime=true;
+            	
+            	for(l=2;l<=k/2;l++) {
+            		if(k%l==0) {
+            			isprime=false;
+            			break;
+            		}
+            	}
+            		
+            		if(isprime) {
+            			System.out.print(k+" ");
+            		}
+            	
+            }
+            
+	}
+        
+	
+	}
+Output
+
+50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+
+enter a multiplication table number :
+75
+Multiplication table of 75:
+75*1=75
+75*2=150
+75*3=225
+75*4=300
+75*5=375
+75*6=450
+75*7=525
+75*8=600
+75*9=675
+75*10=750
+
+prime number between 1to100 are :
+2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
+	
+

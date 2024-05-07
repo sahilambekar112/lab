@@ -1,0 +1,99 @@
+public class Methods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int result = multiplication(5,7);
+		System.out.println("the result is :" + result );
+		
+		int mygrade= 85;
+		System.out.println(checkgrade(mygrade));
+		
+		int rows=5;
+		pattern(rows);
+		
+		Methods m=new Methods();
+		System.out.println("Integer :"+m.getInteger());
+		System.out.println("double :"+m.getdouble());
+		System.out.println("float :"+m.getfloat());
+		System.out.println("boolean:"+m.getboolean());
+		System.out.println("char :"+m.getchar());
+		System.out.println("byte :"+m.getbyte());
+		System.out.println("short :"+m.getshort());
+		System.out.println("long :"+m.getlong());
+		
+
+		
+		
+	}
+
+	public static int multiplication(int num1, int num2) {
+		int result = num1*num2;
+		return result;
+		}
+	
+	public static String checkgrade (int grade) {
+		if (grade >80) {
+			return "congratulation on getting grade A+";
+			
+		}else {
+			return "you need to work hard ";
+			
+		}
+			
+	}
+	
+	public static void pattern(int n) {
+		for (int i=1;i<=n;i++) {
+			for (int j = 1; j<=i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+	
+	public int getInteger() {
+		return 10;
+	}
+		public double getdouble() {
+			return 10.55;
+		}
+		
+		public float getfloat() {
+			return 15.5f;
+			}
+		public boolean getboolean() {
+			return true;
+		}
+		public char getchar() {
+			return 's';
+		}
+		public byte getbyte() {
+			return 100;
+		}
+		public short getshort() {
+			return 2520;
+		}
+		public long getlong() {
+			return 1000000000L;
+		}
+	}
+	
+
+output :
+
+the result is :35
+congratulation on getting grade A+
+*
+**
+***
+****
+*****
+Integer :10
+double :10.55
+float :15.5
+boolean:true
+char :s
+byte :100
+short :2520
+long :1000000000
